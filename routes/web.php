@@ -2,6 +2,10 @@
 
 use Illuminate\Support\Facades\Route;
 
+// importo page controller
+use App\Http\Controllers\Guest\PageController;
+
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,6 +17,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-  return view('home');
-});
+// definisco la rotta del tipo GET
+Route::get('/', [PageController::class, 'index'] );
+// esempio ti tiziano con index
