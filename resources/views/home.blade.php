@@ -11,7 +11,7 @@
             <div class="card">
               <div class="card-body">
                 <h3 class="card-title">{{ $movie['title'] }}</h3>
-                <h4 class="card-title">{{ $movie['original_title'] }}</h4>
+                <h5 class="card-title">{{ $movie['original_title'] }}</h5>
                 <p class="card-text">{{ $movie['nationality'] }}</p>
                 <p class="card-text">{{ $movie['vote'] }}</p>
               </div>
